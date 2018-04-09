@@ -1,0 +1,464 @@
+.purchase-wrapper
+  background $grey-lightest-medium
+  margin-top 132px
+
+.purchase-body
+  width 100%
+  max-width 940px
+  box-sizing border-box
+  margin 0 auto
+  padding 66px 80px
+  transform translate(0, -119px)
+  background $white
+  border 1px solid $grey-light
+  border-radius 4px
+
+  &.-success
+    padding-bottom 48px
+    padding 66px 90px
+
+.purchase-content
+  display flex
+  justify-content space-between
+
+.purchase-product
+  flex 0 0 calc(50% - 30px)
+
+.purchase-methods-content
+  flex 0 0 calc(50% - 30px)
+  display flex
+  flex-flow column
+
+.payment-wrapper
+  margin-top auto
+
+.purchase-headline
+  font-size 21px
+  line-height 33px
+  font-weight 500
+  margin-bottom 21px
+
+.purchase-item-headline
+  font-size 26px
+  line-height 34px
+  color $blue-dark
+  font-weight 600
+  font-family 'Josefin Sans'
+
+.purchase-image-wrapper
+  display block
+  width 100%
+  position relative
+  margin-bottom 23px
+  z-index 1
+  overflow hidden
+  border-radius 4px
+
+  &:before
+    content ''
+    display block
+    padding-top 67%
+
+.purchase-item
+  margin-bottom 20px
+
+.purchase-image
+  width 100%
+  height 100%
+  position absolute
+  top 0
+  left 0
+  -webkit-backface-visibility hidden
+  background-size cover
+  transition transform .25s ease-in-out
+
+.purchase-set-price
+  padding 8px 0
+  display flex
+  align-items center
+
+.purchase-methods
+  display flex
+
+  .radio-input
+    margin-right 30px
+
+    &:last-child
+      margin-right 0
+
+  .radio-content
+    display flex
+
+  .card-icon
+    display flex
+    align-items center
+    justify-content center
+    width 44px
+    height 26px
+    border 1px solid $grey-light
+    border-radius 4px
+    margin-right 10px
+
+    &:last-child
+      margin-right 0
+
+.purchase-powered
+  color $grey-light
+  font-size 12px
+  line-height 14px
+  font-weight 500
+  padding 20px 0
+  margin-bottom 8px
+
+  a
+    linkDefault()
+    display inline-block
+    color $grey-light
+    transition color .15s
+
+    &:hover
+      color $red
+
+.discount-wrapper
+  margin-bottom 26px
+
+  .discount-input-wrapper
+    margin-bottom 18px
+
+.discount-buttons
+  .btn
+    min-width 120px
+
+    &.-transparent
+      min-width 0
+
+.discount-input-wrapper
+  width 100%
+
+  &.input-wrapper.-default .input
+    padding 9px 28px 9px
+    font-weight 500
+
+.purchase-total-discount
+  display flex
+  justify-content space-between
+  align-items center
+  color $grey-light-medium
+  position relative
+  font-size 18px
+  line-height 28px
+  overflow hidden
+  margin 0 -2px
+
+  &:after
+    content '..............................................................................................................'
+    position absolute
+    bottom 0
+    left 0
+
+  .purchase-total-name,
+  .purchase-total-price
+    background $white
+    position relative
+    z-index 1
+    padding 0 2px
+
+  .purchase-total-price
+    font-weight 500
+
+.purchase-total-summ
+  display flex
+  justify-content space-between
+  align-items center
+  color $grey
+  position relative
+  font-size 24px
+  line-height 38px
+  overflow hidden
+  margin 24px -7px 0
+  border-top 1px solid $grey-lighter-medium
+  padding-top 24px
+
+  &:after
+    content '..............................................................................................................'
+    position absolute
+    bottom 0
+    left 0
+
+  .purchase-total-name,
+  .purchase-total-price
+    background $white
+    position relative
+    z-index 1
+    padding 0 7px
+
+  .purchase-total-price
+    font-weight 500
+
+.purchase-continue-button
+  margin-top 26px
+  width 100%
+  text-align center
+
+.purchase-terms
+  font-size 16px
+  line-height 25px
+  color $grey
+  padding 45px 0 3px
+  margin-top 60px
+  border-top 1px solid $grey-lighter-medium
+
+  a
+    linkDefault()
+    display inline-block
+    color $grey
+    font-weight bold
+    text-decoration none
+
+.purchase-methods-get
+  margin-bottom 24px
+
+  a
+    width 100%
+    margin-bottom 24px
+    max-width none
+
+    &:last-child
+      margin-bottom 0
+
+    &.btn.-social .btn-icon
+      position relative
+      left 0
+      top 0
+      transform translate(0, 3px)
+      margin-right 6px
+
+.purchase-login-wrapper
+  margin-bottom 36px
+
+  .purchase-login-description
+    margin-top -3px
+    margin-bottom 16px
+
+  .discount-input-wrapper
+    margin-bottom 24px
+
+  .purchase-login-description
+    font-size 12px
+    line-height 14px
+    color $grey-light
+    font-weight 500
+    margin-bottom 18px
+
+    a
+      linkDefault()
+      display inline-block
+      color #5e5e5e
+      text-decoration none
+
+.purchase-login-social
+  display flex
+
+  .btn
+    font-size 19px
+    line-height 29px
+    padding 12px 0px 12px 32px
+    min-width 166px
+    margin-right 20px
+    flex-grow 1
+
+    .btn-icon
+      left 12px
+
+    &:last-child
+      margin-right 0
+
+.purchase-result
+  text-align center
+  padding-bottom 46px
+  margin-bottom 50px
+  margin-top -14px
+  border-bottom 1px solid $grey-lighter-medium
+
+  &.-success
+    margin-bottom 60px
+
+.purchase-result-headline
+  font-size 36px
+  line-height 57px
+  display flex
+  align-items center
+  justify-content center
+  font-weight 600
+  color $violet-dark
+
+  &.-error
+    color $error
+
+.purchase-result-icon
+  margin-right 20px
+
+.purchase-result-description
+  color $grey
+  font-size 16px
+  line-height 28px
+  max-width 680px
+  margin 15px auto 0
+
+.purchase-download-info
+  font-size 16px
+  line-height 28px
+  color $grey
+
+  a
+    linkDefault()
+    display inline-block
+    color $blue-dark
+    font-weight bold
+    text-decoration none
+
+@media (max-width 1160px)
+  .purchase-wrapper
+    margin-top 142px
+
+  .purchase-body
+    max-width 960px
+    padding 74px 80px 66px
+
+  .purchase-result
+    margin-top -20px
+
+  .purchase-product,
+  .purchase-methods-content
+    flex 0 0 calc(50% - 40px)
+
+  .purchase-headline
+    margin-bottom 23px
+
+  .purchase-methods .radio-input
+    margin-right 30px
+
+@media (max-width 1060px)
+  .purchase-body
+    max-width 900px
+
+@media (max-width 960px)
+  .purchase-wrapper
+    margin-top 126px
+
+  .purchase-body
+    max-width 540px
+    padding 55px 90px
+
+    &.-success
+      padding 58px 90px
+      padding-bottom 66px
+
+  .purchase-content
+    flex-wrap wrap
+
+  .purchase-product, .purchase-methods-content
+    flex 0 0 100%
+
+  .purchase-product
+    margin-bottom 25px
+
+    &.-success
+      margin-bottom 8px
+
+  .purchase-terms
+    margin-top 56px
+    padding 42px 0 18px
+    text-align center
+
+  .purchase-result
+    margin-top -10px
+    padding-bottom 44px
+    margin-bottom 44px
+
+    &.-success
+      margin-bottom 50px
+
+  .purchase-result-headline
+    font-size 26px
+    line-height 41px
+    flex-flow column
+
+  .purchase-result-description
+    font-size 15px
+    line-height 26px
+    margin-top 8px
+
+  .purchase-result-icon
+    margin 0 0 15px 0
+
+  .purchase-download-info
+    border-top 1px solid $grey-lighter-medium
+    margin-top 32px
+    padding-top 41px
+
+@media (max-width 620px)
+  .purchase-wrapper
+    margin-top 3px
+
+    &.-gray
+      background $white
+
+  .purchase-body
+    transform translate(0, 0)
+    padding 36px 0 0
+    border 0
+    margin 0 20px
+    width calc(100% - 40px)
+    border-radius 0
+    border-top 1px solid #F0F0F0
+
+    &.-success
+      padding 36px 0 0
+
+  .discount-wrapper
+    margin-bottom 27px
+
+  .purchase-terms
+    margin-top 46px
+    padding 38px 0 96px
+
+  .purchase-login-social
+    flex-wrap wrap
+    .btn
+      width 100%
+      margin-right 0
+      margin-bottom 14px
+      padding-left 0
+
+      &:last-child
+        margin-bottom 0
+
+  .purchase-login-wrapper
+    margin-bottom 24px
+
+    .discount-input-wrapper
+      margin-bottom 30px
+
+  .purchase-result
+    margin-top 12px
+    padding-bottom 34px
+    margin-bottom 26px
+
+    &.-success
+      border-bottom 0
+      margin-bottom 8px
+
+  .purchase-download-info
+    padding-top 34px
+    padding-bottom 92px
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	.purchase-item-headline,
+  .purchase-result-headline
+    font-weight 700

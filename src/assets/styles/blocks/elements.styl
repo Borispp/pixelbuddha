@@ -247,6 +247,10 @@
       background $red
       opacity .25
 
+  &.-transparent-red
+    display inline-block
+    color $error
+
   &.-redCold
     color $white
     background $redCold
@@ -293,6 +297,9 @@
     border 1px solid $grey-light
     color $grey
     background $white
+
+    &.-medium
+      padding 12px 48px 13px
 
     &:hover
       border-color $grey
@@ -424,6 +431,38 @@
         max-width 136px
         padding-left 54px !important
 
+.radio-input
+  cursor pointer
+  display flex
+  align-items center
+
+  input
+    display none
+
+    &:checked
+      + .radio-circle:before
+        display block
+
+  .radio-circle
+    display inline-block
+    background $grey-lightest-main
+    width 24px
+    height 24px
+    border-radius 50%
+    position relative
+    margin-right 14px
+
+    &:before
+      content ''
+      display none
+      width 12px
+      height 12px
+      background $violet-border
+      border-radius 50%
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.25),

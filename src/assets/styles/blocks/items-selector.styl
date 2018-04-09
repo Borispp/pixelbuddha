@@ -175,6 +175,64 @@
     font-weight 700
     transition color .15s ease-in-out
 
+.items-selector.-separate
+  .result
+    border 0
+    padding 0
+    background $white
+
+  &.-active
+    .result-name-data
+      border-radius 4px 4px 0 0
+
+  .result-name
+    color $violet-border
+
+  .result-name-data
+    flex-grow 1
+    display flex
+    justify-content space-between
+    background $grey-lightest-main
+    border-radius 4px
+    padding 14px 18px 12px 28px
+    box-sizing border-box
+
+  .items-selector-data
+    margin-left 20px
+    flex 0 0 54px
+    text-align center
+    display flex
+    justify-content center
+    background $grey-lightest-main
+    border-radius 4px
+
+    .result-count
+      text-align center
+      color $violet-border
+
+  .items-selector-item-link
+    color $violet-border
+
+    &:hover
+      color $red
+
+      .items-selector-count
+        color $red
+
+    &.-active
+      color $grey-light
+
+      .items-selector-count
+        color $grey-light
+
+  .items-selector-dropdown
+    width calc(100% - 74px)
+    border 0
+    border-top 1px solid $grey-lighter-medium
+
+  .items-selector-count
+    margin-right 6px
+
 @media (max-width 700px)
   .items-selector .result
     padding 16px 20px 14px 18px
