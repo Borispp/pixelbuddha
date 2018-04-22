@@ -2,18 +2,6 @@ var $document = $(document);
 var $html = $('html');
 var $body = $('body');
 
-// Copy clipboard
-if (Clipboard) {
-	var clipboard = new Clipboard('[data-clipboard-text]');
-	clipboard
-		.on('success', function (e) {
-			$.growl.notice({ title: "Copied!", message: e.text });
-		})
-		.on('error', function (e) {
-			$.growl.error({ message: 'Something went wrong' });
-		});
-}
-
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
