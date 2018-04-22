@@ -174,11 +174,11 @@
                   <h3 class="purchase-headline">Order Details</h3>
 
                   <div class="purchase-item">
-                    <span href="#" class="purchase-image-wrapper">
+                    <a href="#" class="purchase-image-wrapper">
                       <span class="purchase-image" style="background-image: url('./assets/images/content/purchase-image.png')"></span>
-                    </span>
+                    </a>
 
-                    <h3 class="purchase-item-headline">Social Media Booster Kit Volume 4</h3>
+                    <h3 class="purchase-item-headline"><a href="#">Social Media Booster Kit Volume 4</a></h3>
 
                     <div class="purchase-set-price">
                       <div class="set-price-amount">$58</div>
@@ -196,27 +196,21 @@
                         </div>
                       </div>
                       <div class="items-selector-data">
-                        <div class="result-count js-result-count">2</div>
+                        <div class="result-count js-result-count">
+                          <input type="text" class="result-count-input js-result-count-input" value="1">
+                        </div>
                       </div>
                     </div>
                     <div class="items-selector-dropdown">
                       <ul class="items-selector-list">
                         <li class="items-selector-item">
-                          <a href="#" class="items-selector-item-link js-items-selector-item-link -active" data-item='{"name": "Commercial License", "count": 2}'>
+                          <a href="#" class="items-selector-item-link js-items-selector-item-link -active" data-item='{"name": "Commercial License"}'>
                             <span href="#" class="items-selector-item-text">Commercial License</span>
-                            <span class="items-selector-count">2</span>
                           </a>
                         </li>
                         <li class="items-selector-item">
-                          <a href="#" class="items-selector-item-link js-items-selector-item-link" data-item='{"name": "Free", "count": 3}'>
+                          <a href="#" class="items-selector-item-link js-items-selector-item-link" data-item='{"name": "Free"}'>
                             <span href="#" class="items-selector-item-text">Free</span>
-                            <span class="items-selector-count">3</span>
-                          </a>
-                        </li>
-                        <li class="items-selector-item">
-                          <a href="#" class="items-selector-item-link js-items-selector-item-link" data-item='{"name": "Upgraded", "count": 9}'>
-                            <span href="#" class="items-selector-item-text">Upgraded</span>
-                            <span class="items-selector-count">9</span>
                           </a>
                         </li>
                       </ul>
@@ -287,7 +281,7 @@
                     </label>
 
                     <div class="discount-buttons">
-                      <a href="#" class="btn -small -red" disabled>Applied</a>
+                      <a href="#" class="btn -small -red -disabled-grey" disabled>Applied</a>
                       <a href="#" class="btn -small -transparent -transparent-red">Remove</a>
                     </div>
                   </div>
@@ -296,7 +290,7 @@
                     <div class="purchase-total-wrapper">
                       <div class="purchase-total-discount">
                         <span class="purchase-total-name">Discount</span>
-                        <span class="purchase-total-price">$0</span>
+                        <span class="purchase-total-price -with-discount">$19.4</span>
                       </div>
                       <div class="purchase-total-summ">
                         <span class="purchase-total-name">Total</span>

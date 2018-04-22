@@ -2,6 +2,18 @@ var $document = $(document);
 var $html = $('html');
 var $body = $('body');
 
+// Copy clipboard
+if (Clipboard) {
+	var clipboard = new Clipboard('[data-clipboard-text]');
+	clipboard
+		.on('success', function (e) {
+			$.growl.notice({ title: "Copied!", message: e.text });
+		})
+		.on('error', function (e) {
+			$.growl.error({ message: 'Something went wrong' });
+		});
+}
+
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
@@ -20,6 +32,7 @@ $('.js-items-selector').on('click', function (e) {
 
 $('.js-items-selector-item-link').on('click', function (e) {
 	e.preventDefault();
+	$('.js-items-selector-data').removeClass('-empty-count');
 	$(this).closest('.js-items-selector').find('.js-items-selector-item-link').removeClass('-active');
 	$(this).addClass('-active');
 
@@ -27,8 +40,15 @@ $('.js-items-selector-item-link').on('click', function (e) {
 	var resultName = $(this).closest('.js-items-selector').find('.js-result-name')
 	var resultCount = $(this).closest('.js-items-selector').find('.js-result-count')
 	resultName.html(itemResult.name);
-	resultCount.html(itemResult.count);
+
+	if (itemResult.count) {
+		resultCount.html(itemResult.count);
+	}
 });
+
+$('.js-result-count-input').on('click', function (e) {
+	e.stopPropagation();
+})
 
 $(window).click(function () {
 	$('.js-items-selector').removeClass('-active');

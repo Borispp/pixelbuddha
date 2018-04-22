@@ -1,0 +1,258 @@
+.refferal-item
+  margin-bottom 12px
+
+.refferal-block
+  background $grey-lightest-main
+  height 64px
+  border-radius 4px
+  display flex
+  align-items center
+  padding 0 20px
+  box-sizing border-box
+
+.refferal-icon
+  display block
+  flex 0 0 30px
+  margin-right 10px
+
+label.refferal-icon
+  cursor pointer
+
+.refferal-content
+  flex 1 1
+  color $grey
+  font-size 18px
+  margin-right 12px
+
+  input
+    border 0
+    width 100%
+    color $grey
+    font-size 18px
+    background transparent
+
+.refferal-controls
+  flex 0 0 80px
+  margin-left auto
+
+  a
+    width 100%
+
+  &.-mobile
+    display none
+
+.refferal-description
+  font-size 12px
+  line-height 19px
+  color $grey-light-medium
+  padding 10px 0 14px
+
+  a
+    linkDefault()
+    display inline-block
+    color $blue-dark
+    font-weight 600
+    text-decoration none
+
+
+.refferal-sales-data
+  width 100%
+
+  .refferal-sales-thead
+    color $black
+    font-size 18px
+    line-height 28px
+    font-weight 500
+
+.refferal-sales-row
+  display flex
+  align-items center
+  height 64px
+
+  &.-refund
+    color #d1d1d1
+
+    .refferal-sales-item-link
+      opacity .3
+
+    .refferal-sales-highlight
+      opacity .3
+
+.refferal-sales-item
+  padding 0 20px
+
+  &:first-child
+    padding-left 40px
+
+  &.-data
+    flex 0 0 100px
+
+  &.-item
+    flex 1 1
+
+  &.-price
+    flex 0 0 50px
+
+  &.-earnings
+    flex 0 0 90px
+
+  .-table-date
+    display none
+    font-size 15px
+
+.refferal-sales-tbody
+  font-size 18px
+  line-height 27px
+  color $grey
+
+  .refferal-sales-row
+    &:nth-child(odd)
+      background $grey-lightest-medium
+
+.refferal-sales-highlight
+  color $green-cold
+  font-weight 500
+
+.refferal-sales-item-link
+  linkDefault()
+  display inline-block
+  color $blue-dark
+  font-weight 500
+  text-decoration none
+
+.refferal-sales-refunded
+  display inline-block
+  margin-left 24px
+  color $grey
+
+.refferal-sales-mobile-data
+  &.-mobile
+    display none
+
+.refferal-sales-mobile-item
+  padding 21px 26px
+  box-sizing border-box
+  border-radius 4px
+  line-height: 23px;
+  font-size: 15px;
+  color $grey
+  margin-bottom 4px
+
+  &:nth-child(odd)
+    background $grey-lightest-medium
+
+  &.-refund
+    .refferal-sales-mobile-name,
+    .refferal-sales-mobile-link,
+    .refferal-sales-mobile-date,
+    .refferal-sales-mobile-info
+      opacity .3
+
+.refferal-sales-mobile-name
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 18px;
+  color $black
+
+.refferal-sales-mobile-link
+  linkDefault()
+  text-decoration none
+  color $blue-dark
+  display block
+  font-weight: 500;
+  line-height: 27px;
+  font-size: 18px;
+  margin-bottom 4px
+
+  &:hover,
+  &:active
+    text-decoration underline
+
+.refferal-sales-mobile-info
+  display flex
+  margin-top 16px
+
+  .refferal-sales-mobile-info-item
+    margin-right 42px
+
+    &:last-child
+      margin-right 0
+
+  .refferal-sales-mobile-info-label
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+    color $black
+    margin-bottom 2px
+
+  .refferal-sales-mobile-info-data
+    font-size 18px
+    line-height 27px
+    color $grey
+
+.refferal-sales-mobile-refunded
+  display inline-block
+  margin-left 10px
+  color $grey
+
+.refferal-sales-mobile-content
+  margin-top 2px
+
+.refferal-sales-mobile-date
+  margin-top 4px
+
+@media (max-width 992px)
+  .refferal-block
+    padding-right 16px
+
+  .refferal-sales-item.-data
+    display none
+
+  .refferal-sales-item
+    &:nth-child(2)
+      padding-left 40px
+
+  .refferal-sales-refunded
+    display inline-block
+    margin-left 4px
+    font-size 15px
+    line-height 23px
+
+  .refferal-sales-item
+    .-table-date
+      display inline-block
+      font-size 15px
+      line-height 23px
+
+  .refferal-sales-tbody
+    .refferal-sales-row
+      height 92px
+      align-items flex-start
+      box-sizing border-box
+      padding-top 18px
+
+    .refferal-sales-item
+      line-height 30px
+
+@media (max-width 700px)
+  .refferal-sales-data
+    &.-desktop
+      display none
+
+  .refferal-sales-mobile-data
+    &.-mobile
+      display block
+
+  .refferal-controls
+    &.-desktop
+      display none
+
+    &.-mobile
+      display block
+      margin-bottom 38px
+
+    a
+      width 80px
+
+  .refferal-content
+    margin-right 0

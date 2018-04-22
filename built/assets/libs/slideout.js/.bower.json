@@ -39,8 +39,8 @@
     "tag": "v1.0.1",
     "commit": "fb3910dfbfb8dbee3c3831432e22cbf0e2e7b5ad"
   },
-  "_source": "https://github.com/Mango/slideout.git",
+  "_source": "https://github.com/mango/slideout.git",
   "_target": "^1.0.1",
-  "_originalSource": "slideout.js",
+  "_originalSource": "mango/slideout",
   "_direct": true
 }

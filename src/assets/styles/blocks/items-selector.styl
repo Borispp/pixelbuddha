@@ -48,6 +48,11 @@
     font-size 14px
     transition color .15s ease-in-out
 
+.items-selector-dropdown-fieldset
+  border-bottom 1px solid $grey-lighter-medium
+  padding-bottom 9px
+  margin-bottom 12px
+
 .items-selector
   position relative
   user-select none
@@ -94,6 +99,9 @@
     justify-content space-between
     align-items center
 
+    &.-empty-count
+      flex 0 0 26px
+
   .result-count
     color $grey-light
     font-size 18px
@@ -101,6 +109,24 @@
     font-weight 700
     width 30px
     text-align right
+
+    &:empty
+      width 0
+
+  .result-count-input
+    font-size 18px
+    line-height 28px
+    font-weight 700
+    text-align center
+    color $violet-border
+    background $grey-lightest-main
+    box-shadow 0
+    -webkit-appearance none
+    border 0
+    width 54px
+    height 54px
+    margin-left -12px
+    border-radius 4px
 
   .items-selector-handler
     width 26px
@@ -174,6 +200,16 @@
     line-height 39px
     font-weight 700
     transition color .15s ease-in-out
+
+.items-selector-fieldset
+  border-bottom 1px solid $grey-lighter-medium
+  margin-bottom 26px
+  padding-bottom 6px
+
+  &:last-child
+    border-bottom 0
+    margin-bottom -14px
+    padding-bottom 0
 
 .items-selector.-separate
   .result

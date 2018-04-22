@@ -1,0 +1,113 @@
+.plan-details-wrapper
+  display flex
+  align-items flex-end
+  background $grey-lightest-medium
+  border-radius 4px
+  padding 48px 36px 48px 36px
+
+.plan-details-image-wrapper
+  flex 0 0 206px
+  margin-right 37px
+
+.plan-details-image
+  width 100%
+  height 134px
+  background-size contain
+  background-repeat no-repeat
+  background-position center center
+
+  &.-yearly-plan
+    height 185px
+    margin-top -26px
+    transform translate(0, 8px)
+
+  &.-plus-membership
+    height 227px
+    transform translate(0, 48px)
+    margin-top -70px
+
+.plan-details-content
+  flex 1 1
+
+.plan-details-headline
+  font-size 16px
+  line-height 19px
+  font-family 'Josefin Sans'
+  text-transform uppercase
+  color $violet
+  font-weight 600
+  margin-bottom 14px
+
+.plan-details-info
+  font-size 14px
+  line-height 25px
+  color $grey
+
+.plan-details-info-item
+  display flex
+
+.plan-details-info-name
+  flex 0 0 76px
+
+.plan-details-highlight
+  color $green-lighight
+
+.plan-details-highlight-exp
+  color $error
+
+.plan-details-controls
+  display flex
+  margin-top 22px
+
+  a
+    margin-right 12px
+
+@media (max-width 1400px)
+  .plan-details-image-wrapper
+    margin-bottom 38px
+    margin-right 0
+    text-align center
+
+  .plan-details-image.-plus-membership
+    transform translate(0, 8px)
+
+@media (max-width 992px)
+  .plan-details-image-wrapper
+    height 160px
+    display flex
+    align-items flex-end
+    margin-bottom 0
+    margin-right 54px
+
+  .plan-details-image.-plus-membership
+    transform translate(0, 48px)
+
+@media (max-width 700px)
+  .plan-details-wrapper
+    display block
+
+  .plan-details-image-wrapper
+    flex 0 0 100%
+    margin-right 0
+    margin-bottom 26px
+    height 185px
+
+  .plan-details-image
+    &.-monthly-plan
+      height 160px
+
+  .plan-details-image.-plus-membership
+    transform translate(0, 8px)
+
+  .plan-details-content
+    width 200px
+    margin 0 auto
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	.plan-details-headline
+    font-weight 700

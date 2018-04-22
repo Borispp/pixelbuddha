@@ -1,11 +1,11 @@
 {
-  "name": "uihead",
+  "name": "pixelbuddha",
   "version": "0.0.1",
-  "description": "uihead bower",
+  "description": "pixelbuddha bower",
   "main": "gulpfile.js",
   "keywords": [
     "frontend",
-    "uihead"
+    "pixelbuddha"
   ],
   "license": "MIT",
   "ignore": [
@@ -14,7 +14,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "jquery": "~2.2.4",
+    "jquery": "~2.2",
     "clipboard": "^1.5.16",
     "masonry": "desandro/masonry#^4.1.1",
     "growl": "ksylvest/jquery-growl#^1.3.2",
@@ -22,6 +22,7 @@
     "slick-carousel": "^1.8.1",
     "scrollNav": "^2.7.1",
     "scrollme": "nckprsn/scrollme#^1.1.0",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "slideout.js": "mango/slideout#^1.0.1"
   }
 }

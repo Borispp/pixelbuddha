@@ -60,6 +60,9 @@
   &.-indention-bottom-none
     padding-bottom 0
 
+  &.-lk-section
+    padding-bottom 120px
+
 .section-header
   box-sizing border-box
   padding 0 30px 44px
@@ -100,6 +103,10 @@ h2.section-header-headline
 .section-header-description
   font-size 14px
   color $grey-light-medium
+
+@media (max-width 1400px)
+  .section.-lk-section
+    padding-bottom 100px
 
 @media (max-width 1160px)
   .section
@@ -203,6 +210,9 @@ h2.section-header-headline
 @media (max-width 620px)
   .section
     padding 34px 0 0
+
+    &.-lk-section
+      padding-bottom 20px
 
   .content
     margin-bottom 62px

@@ -1,0 +1,45 @@
+.card-info-content
+  display flex
+  background $grey-lightest-main
+  border-radius 4px
+  height 64px
+  align-items center
+  padding 0 18px
+  box-sizing border-box
+
+.card-info-icon
+  display: flex;
+  flex 0 0 44px
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 26px;
+  background $white
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  margin-right: 18px;
+
+.card-info-number
+  flex 1 1
+  color $violet-dark
+  font-size 18px
+  line-height 27px
+  font-weight 500
+  margin-right 12px
+
+.card-info-controls
+  flex 0 0 120px
+  margin-left auto
+
+  a
+    width 120px
+
+@media (max-width 700px)
+  .card-info-content
+    flex-wrap wrap
+    height 116px
+    padding 2px 18px
+
+  .card-info-controls
+    flex 0 0 100%
+    margin-top -24px

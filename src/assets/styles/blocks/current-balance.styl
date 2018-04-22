@@ -1,0 +1,97 @@
+.current-balance-wrapper
+  background $grey-lightest-medium
+  border-radius 4px
+  padding 42px 42px 30px
+  box-sizing border-box
+  display flex
+  flex-wrap wrap
+
+.current-balance-image-wrapper
+  flex 0 0 152px
+  margin-right 35px
+
+  .current-balance-image
+    width 100%
+    height 156px
+    background-size contain
+    background-repeat no-repeat
+    background-position center center
+
+.current-balance-summ
+  line-height 101px
+  font-size 64px
+  font-weight 600
+  color $green-cold
+
+.current-balance-description
+  color $grey-light-medium
+  font-size 12px
+  line-height 19px
+  margin -5px 0 0 14px
+
+@media (max-width 1400px)
+  .current-balance-wrapper
+    padding 48px 34px 46px
+
+  .current-balance-image-wrapper
+    flex 0 0 100%
+    text-align center
+    margin-right 0
+    margin-bottom 6px
+
+    .current-balance-image
+      height 200px
+
+  .current-balance-summ
+    font-size 48px
+    line-height 76px
+    text-align center
+
+  .current-balance-description
+    margin-left 0
+    text-align center
+
+@media (max-width 992px)
+  .current-balance-wrapper
+    padding 20px 42px 8px
+
+  .current-balance-summ
+    font-size 64px
+    line-height 101px
+
+  .current-balance-content
+    padding-top 21px
+
+  .current-balance-description
+    text-align left
+    padding-left 16px
+
+  .current-balance-image-wrapper
+    flex 0 0 152px
+    margin-right 34px
+    margin-bottom 0
+
+@media (max-width 700px)
+  .current-balance-wrapper
+    justify-content center
+    padding-top 36px
+    padding-bottom 45px
+
+    .lk-headline
+      flex 0 0 100%
+      text-align center
+      margin-bottom 36px !important
+
+  .current-balance-image-wrapper
+    margin-right 0
+    flex 0 0 200px
+
+  .current-balance-content
+    padding-top 18px
+
+  .current-balance-summ
+    font-size 48px
+    line-height 76px
+
+  .current-balance-description
+    margin-top -2px
