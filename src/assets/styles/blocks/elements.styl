@@ -494,6 +494,17 @@
     font-weight 500
     border-radius 4px
     border 1px solid $grey-light
+    cursor pointer
+    transition color .15s ease-in-out, border-color .15s ease-in-out, background .15s ease-in-out
+
+    &:not(.-connected)
+      cursor pointer
+      &:hover
+        border-color $grey
+
+      &:active
+        border-color $grey
+        background $grey-lightest-medium
 
     &.-connected
       border-color $grey-lightest-main

@@ -16,6 +16,7 @@
 
 .lk-content-wrapper
   display flex
+  flex-wrap wrap
 
 .refferal-sales-wrapper
   margin-top 34px
@@ -130,7 +131,7 @@ h3.lk-headline
     color $grey-light-medium
     font-size 12px
     line-height 18px
-    margin 14px 0 4px
+    margin 13px 0 3px
 
 
 .lk-social-connections
@@ -312,6 +313,18 @@ h3.lk-headline
       padding-top 60px
       padding-bottom 72px
 
+  .lk-categories-wrapper
+    flex 0 0 100%
+
+  .-purchase-h2-headline
+    display none
+
+  .lk-purchase-aside
+    display none
+
+  .lk-categories-small-aside
+    display block
+
   .lk-content-plan-wrapper,
   .affiliate-current-balance
     flex 0 0 280px
@@ -344,20 +357,8 @@ h3.lk-headline
   .lk-footer
     margin-top 44px
 
-  .-purchase-h2-headline
-    display none
-
-  .lk-categories-wrapper
-    flex 0 0 100%
-
   .lk-content-wrapper
     flex-wrap wrap
-
-  .lk-categories-small-aside
-    display block
-
-  .lk-purchase-aside
-    display none
 
   .lk-wrapper.-lk-purchase
     padding-top 60px
@@ -438,6 +439,7 @@ h3.lk-headline
   .upload-userpic-wrapper
     .upload-userpic-text
       margin-top 10px
+      padding-bottom 4px
 
   .lk-categories-content
     margin-left 20px
