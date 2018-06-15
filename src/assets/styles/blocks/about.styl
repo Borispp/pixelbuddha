@@ -1,0 +1,271 @@
+.section-header-about-description
+  max-width 600px
+  margin 0 auto
+
+.about-main-photo
+  max-width 1200px
+  width 100%
+
+.about-main-photo-image
+  width 100%
+
+  &.-big
+    display block
+
+  &.-small
+    display none
+
+.about-main-description-wrapper
+  padding 74px 0 40px
+  display flex
+
+  .text-block-blockquote
+    margin 0 0 0 -60px
+    flex 1
+
+    cite
+      padding-left 60px
+      font-weight 500
+      margin-top 12px
+
+  .about-main-description-info
+    flex 0 0 320px
+    font-size 16px
+    line-height 28px
+    padding 8px 40px 0 48px
+
+    .visit-link
+      width 120px
+
+  .about-main-description-info-text
+    padding-bottom 26px
+
+.about-team-photos
+  display flex
+  flex-wrap wrap
+  margin 20px -30px -30px
+  width calc(100% + 60px)
+
+.about-team-photo-item
+  flex 0 0 calc(33.33% - 60px)
+  margin 30px
+  box-sizing border-box
+  border-radius 4px
+  background-size cover
+  background-position center center
+  position relative
+
+  &:before
+    content ''
+    display block
+    padding-top 78%
+
+  .about-team-photo
+    width 100%
+    height 100%
+    position absolute
+    left 0
+    top 0
+    border-radius 4px
+    background-size cover
+    background-position center center
+    opacity 0
+    transition opacity 1s ease-in-out
+
+    &.show
+      opacity 1
+
+.about-counts-wrapper
+  padding 94px 0 100px
+  width 100%
+
+.about-counts-headline
+  font-size 32px
+  line-height 51px
+  color $grey-light-medium
+  font-weight 500
+  display flex
+  align-items center
+  justify-content center
+
+  svg
+    margin-top -5px
+    margin-right 12px
+
+.about-counts-items
+  width calc(100% + 80px)
+  display flex
+  margin 56px -40px 0
+  box-sizing: border-box;
+  padding: 0 10px;
+  color $grey
+
+  .about-counts-item
+    flex 0 0 33.33%
+    padding 0 40px
+    box-sizing border-box
+    text-align center
+
+  .about-counts-item-num
+    color $violet-border
+    font-size 54px
+    font-weight 600
+    line-height 63px
+
+  .about-counts-item-headline
+    font-size 24px
+    line-height 42px
+    font-weight 600
+    margin 16px 0 7px
+
+  .about-counts-item-description
+    font-size 16px
+    line-height 28px
+    margin-bottom 18px
+
+  .about-counts-item-link
+    linkDefault()
+    font-size 16px
+    font-weight 600
+    text-decoration none
+
+@media (max-width 1160px)
+  .about-main-description-wrapper
+    .text-block-blockquote
+      margin-left -40px
+
+    .about-main-description-info
+      padding 8px 0px 0 48px
+      flex 0 0 288px
+
+  .about-main-photo-image
+    &.-big
+      display none
+
+    &.-small
+      display block
+
+  .about-team-photos
+    margin 10px -24px -24px
+    width calc(100% + 48px)
+
+  .about-team-photo-item
+    margin 24px
+    flex 0 0 calc(33.33% - 48px)
+
+  .about-counts-items
+    width calc(100% + 48px)
+    margin 56px -24px 0
+    padding 0
+
+    .about-counts-item
+      padding 0 24px
+
+  .about-counts-wrapper
+    padding-bottom 92px
+
+@media (max-width 1100px)
+  .about-main-description-wrapper
+    .text-block-blockquote
+      margin 0
+
+      cite
+        padding 0
+
+@media (max-width 992px)
+  .about-main-description-wrapper
+    padding 56px 0 20px
+
+    .about-main-description-info
+      padding 0px 0px 0 40px
+      flex 0 0 230px
+
+    .text-block-blockquote cite
+      margin-top 15px
+
+  .about-team-photos
+    margin 16px -18px -18px
+
+  .about-team-photo-item
+    flex 0 0 calc(50% - 36px)
+    margin 18px
+    padding 0
+
+  .about-counts-wrapper
+    padding-top 74px
+
+  .about-counts-headline
+    margin-left -8px
+    justify-content flex-start
+
+  .about-counts-items
+    flex-wrap wrap
+    margin-top 46px
+
+    .about-counts-item
+      width 100%
+      flex 0 0 100%
+      text-align left
+      margin-bottom 50px
+
+      &:last-child
+        margin-bottom 0
+
+    .about-counts-item-num
+      font-size 46px
+      line-height 54px
+
+  .about-counts-wrapper
+    padding-bottom 70px
+
+@media (max-width 620px)
+  .about-main-photo
+    margin 0 -20px
+    width calc(100% + 40px)
+
+  .about-main-description-wrapper
+    flex-wrap wrap
+    padding 46px 0 20px
+    margin 0 12px
+
+    .text-block-blockquote cite
+      margin-left 0
+      margin-top 20px
+
+    .about-main-description-info
+      padding-left 0
+      padding-top 40px
+      flex 0 0 100%
+
+  .about-team-photos
+    margin 42px -5px -18px
+
+  .about-team-photo-item
+    flex 0 0 calc(100% - 36px)
+    margin-bottom 14px
+
+  .about-counts-wrapper
+    padding-top 92px
+
+  .about-counts-headline
+    flex-wrap wrap
+    justify-content center
+    font-size 21px
+    line-height 28px
+
+    svg
+      margin-right 0
+      margin-bottom 14px
+
+  .about-counts-items
+    margin-top 56px
+    width calc(100% + 40px)
+
+    .about-counts-item
+      text-align center
+      padding 0 40px
+      margin-bottom 60px
+
+    .about-counts-item-num
+      font-size 54px
+      line-height 63px

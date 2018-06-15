@@ -1,0 +1,129 @@
+.join-form
+  background-color $grey-lightest-main
+  border-radius 4px
+  padding 60px 100px
+  box-sizing border-box
+
+  .join-form-headline
+    font-size 28px
+    line-height 44px
+    font-weight 500
+    margin-bottom 12px
+
+  .join-form-description
+    font-size 16px
+    line-height 28px
+    color $grey
+    margin-bottom 32px
+
+  .join-form-fieldset
+    display flex
+
+    .input-wrapper
+      flex 1
+      margin-right 40px
+      position relative
+
+      .input-wrapper-icon
+        position absolute
+        left 20px
+        top 50%
+        transform translate(0, -50%)
+
+      .input
+        color $grey
+        background $white
+        border-width 1px
+        border-color #E9F1F2
+        height 60px
+        padding-left 61px
+
+        &:focus,
+        &:active
+          color $grey
+          border-color $violet-border
+
+        +placeholder()
+          color $grey-light
+
+      &:hover
+        .input
+          color $grey
+          border-color $grey-light
+
+          &:focus,
+          &:active
+            color $grey
+            border-color $violet-border
+
+    .btn
+      flex 0 0 240px
+      min-width 0
+      height 60px
+      display flex
+      align-items center
+      justify-content center
+      padding 0
+      font-size 18px
+
+  .join-form-privacy
+    padding 16px 0 0 20px
+    font-size 12px
+    line-height 17px
+    font-weight 500
+    color $grey-light
+
+@media (max-width 1160px)
+  .join-form
+    padding 60px 80px 64px
+
+    .join-form-headline
+      margin-bottom 15px
+
+@media (max-width 992px)
+  .join-form
+    padding 54px 60px 56px
+
+    .join-form-headline
+      margin-bottom 12px
+
+    .join-form-fieldset
+      .input-wrapper
+        margin-right 20px
+
+      .btn
+        flex 0 0 140px
+
+        span
+          display none
+
+@media (max-width 620px)
+  .join-form
+    margin 0 -20px
+    padding 48px 30px 48px
+    border-radius 0
+
+    .join-form-headline
+      font-size 21px
+      line-height 33px
+      margin-bottom 18px
+
+    .join-form-fieldset
+      flex-wrap wrap
+
+      .input-wrapper
+        margin-right 0
+        flex 0 0 100%
+
+        .input
+          padding-top 9px
+          padding-left 68px
+
+      .btn
+        flex 0 0 100%
+
+        span
+          display inline
+
+    .join-form-privacy
+      padding 14px 0 24px 23px

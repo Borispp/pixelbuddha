@@ -412,3 +412,23 @@ if ($nav.length > 0) {
 		setNav();
 	});
 }
+
+var aboutTeamPhotoLength = $(".js-about-team-photo-item").length
+
+// Change photo images
+setInterval(function () {
+	var random = Math.floor( Math.random() * aboutTeamPhotoLength ) + 1;
+
+	var el = $(".js-about-team-photo-item").eq(random);
+	var el2 = $(".js-about-team-photo-item").eq(random + 2);
+
+	changeTeamPhoto(el);
+	if (el2.length) { changeTeamPhoto(el2); }
+}, 3000)
+
+function changeTeamPhoto(el) {
+	var next = $(el).find('.show').next();
+	var nextShow = next.length !== 0 ? next : $(el).find(">:first-child");
+	$(el).find('> div').removeClass('show');
+	nextShow.addClass('show');
+}
