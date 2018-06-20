@@ -49,6 +49,40 @@
     top -100%
     left -100%
 
+  &.-freebie-preview
+    padding 0
+    box-shadow 10px 10px 25px rgba(0, 0, 0, 0.25)
+    overflow visible
+    border-radius 0
+    position absolute
+    top 120px
+    transform translate(-50%, 0%)
+    max-height none
+
+    .close-popup
+      position absolute
+      right -56px
+      top 0px
+
+      svg
+        width 16px
+        height 16px
+        fill $white
+        opacity 1
+
+      &:hover
+        svg
+          opacity .7
+
+    .popup-container
+      overflow-y auto
+      img
+        width 100%
+        margin-bottom 12px
+
+        &:last-child
+          margin-bottom 0
+
   &.-medium
     padding 38px 60px
 
@@ -214,6 +248,22 @@
     padding-left 0
     padding-right 0
     min-width 0
+
+@media (max-width 992px)
+  .popup-wrapper.-freebie-preview
+    top 30px
+
+    .close-popup
+      right -30px
+      top 4px
+
+@media (max-width 767px)
+  .popup-wrapper.-freebie-preview
+    top 30px
+
+    .close-popup
+      right 18px
+      top 18px
 
 @media (max-width 720px)
   .popup-image

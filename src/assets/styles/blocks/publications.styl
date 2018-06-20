@@ -100,7 +100,7 @@
   display block
   margin 14px 0 42px
   background: #FFFFFF;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.12)
   border-radius: 4px;
   box-sizing border-box
   padding 30px
@@ -114,6 +114,18 @@
 
     .site-preview-links
       color $red
+
+  &.-grey
+    box-shadow none
+    background $grey-lightest-medium
+    border 1px solid $grey-lighter-medium
+    margin-bottom 26px
+
+    .site-preview-headline
+      padding-bottom 0
+
+    &:hover
+      transform translate(0, 0)
 
   .site-preview-description
     padding-bottom 15px

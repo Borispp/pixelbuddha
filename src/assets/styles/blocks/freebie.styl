@@ -3,12 +3,56 @@
 
   .freebie-image-main-wrapper
     width 100%
-    padding-bottom 66.5%
     background-size cover
     background-position top center
     background-repeat no-repeat
     margin-bottom 30px
     border-radius 4px
+    padding-bottom: 66.5%
+
+  .freebie-image-main-wrapper-old
+    position relative
+    border-radius 4px
+    background $grey-lightest-medium
+    border 1px solid $grey-lighter-medium
+    width 100%
+    margin-bottom 30px
+    text-align center
+    padding 94px 60px
+    box-sizing border-box
+    cursor pointer
+
+    .freebie-image-main-wrapper-old-main
+      position relative
+      z-index 2
+      width 100%
+      max-width 640px
+      border-radius 4px
+
+    .freebie-image-main-wrapper-old-left
+      position absolute
+      max-width 510px
+      left 0
+      top 50%
+      z-index 1
+      transform translate(60px, -50%)
+      transition transform .25s ease-in-out
+
+    .freebie-image-main-wrapper-old-right
+      position absolute
+      max-width 510px
+      right 0
+      top 50%
+      z-index 1
+      transform translate(-60px, -50%)
+      transition transform .25s ease-in-out
+
+    &:hover
+      .freebie-image-main-wrapper-old-left
+        transform translate(20px, -50%)
+
+      .freebie-image-main-wrapper-old-right
+        transform translate(-20px, -50%)
 
   .freebie-images-sub
     display flex
@@ -109,6 +153,12 @@
   box-sizing border-box
   padding-left 342px
 
+@media (max-width 1439px)
+  .freebie-image-main-wrapper-old
+    .freebie-image-main-wrapper-old-left,
+    .freebie-image-main-wrapper-old-right
+      display none
+
 @media (max-width 1160px)
   .freebie-images-wrapper
     .freebie-image-main-wrapper
@@ -121,6 +171,10 @@
       flex 0 0 calc(50% - 22px)
       padding-bottom 31%
       margin 11px
+
+  .freebie-images-wrapper
+    .freebie-image-main-wrapper-old
+      padding 60px
 
   .freebie-content-wrapper
     .freebie-content-aside
@@ -155,6 +209,9 @@
     .freebie-image-main-wrapper
       padding-bottom 64.5%
 
+    .freebie-image-main-wrapper-old
+      padding 60px
+
   .freebie-public
     margin-bottom 22px
 
@@ -164,6 +221,10 @@
 
     .freebie-image-main-wrapper
       padding-bottom 66%
+
+    .freebie-image-main-wrapper-old
+      padding 0
+      border 0
 
     .freebie-images-sub-item
       flex 0 0 100%

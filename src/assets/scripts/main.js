@@ -187,23 +187,35 @@ $('.js-view-password').on('click', function (e) {
 
 // Popups
 var $overlay = $('.js-overlay');
+var $overlayDark = $('.js-overlay-dark');
 var $closePopup = $('.js-close-popup');
 
 $('[data-popup]').on('click', function (e) {
 	e.preventDefault();
 	var popup = $(this).data('popup');
-	$body.addClass('popup-open');
+	var style = $(this).data('style');
+	var overflow = $(this).data('overflow');
+
 	$(popup).removeClass('-hide');
-	$overlay.removeClass('-hide');
+	if (style === 'overlay-dark') {
+		$overlayDark.removeClass('-hide');
+	} else {
+		$overlay.removeClass('-hide');
+	}
+
+	if (overflow !== 'no-overflow') {
+		$body.addClass('popup-open');
+	}
 });
 
 var closePopup = function () {
 	$overlay.addClass('-hide');
+	$overlayDark.addClass('-hide');
 	$body.removeClass('popup-open');
 	$('.popup-wrapper').addClass('-hide');
 }
 
-$('.js-overlay, .js-close-popup').on('click', function () {
+$('.js-overlay, .js-overlay-dark, .js-close-popup').on('click', function () {
 	closePopup();
 });
 

@@ -23,6 +23,7 @@
     "scrollNav": "^2.7.1",
     "scrollme": "nckprsn/scrollme#^1.1.0",
     "scrollmagic": "^2.0.5",
-    "slideout.js": "mango/slideout#^1.0.1"
+    "slideout.js": "mango/slideout#^1.0.1",
+    "skrollr": "Prinzhorn/skrollr#^0.6.30"
   }
 }
