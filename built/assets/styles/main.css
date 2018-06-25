@@ -6284,6 +6284,10 @@ label.refferal-icon {
         flex-wrap: wrap;
     margin: 8px -10px 48px;
   }
+  .site-preview-block.-empty-sides {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .site-preview-block .site-preview-description {
     padding-bottom: 23px;
   }
