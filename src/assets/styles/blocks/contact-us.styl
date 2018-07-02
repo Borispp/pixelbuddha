@@ -1,0 +1,297 @@
+.contact-wrapper
+  background $grey-lightest-main
+
+.contact-section-wrapper
+  display flex
+  flex-wrap wrap
+
+.contact-text-wrapper
+  margin-left 50px
+
+.contact-form-wrapper
+  margin-right 50px
+
+.contact-form .form-inputs .input-wrapper
+  &.-message
+    margin-bottom 24px
+
+.contact-text-wrapper,
+.contact-form-wrapper
+  // flex 0 0 calc(50% - 55px)
+  flex 1
+
+.contact-text-wrapper-item
+  max-width 600px
+  font-size 16px
+  line-height 28px
+  color $grey
+  padding-bottom 36px
+
+  &:last-child
+    padding-bottom 0
+
+  h3
+    font-size 21px
+    line-height 33px
+    font-weight 500
+    padding-bottom 12px
+    color $black
+
+  .contact-text-main-headline
+    font-size 36px
+    line-height 72px
+    padding-top 6px
+    padding-bottom 2px
+
+.contact-form
+  background: $white;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-sizing border-box
+  padding 56px 60px
+
+  .form-heading
+    padding-bottom 35px
+
+  .form-headline
+    color $black
+    font-weight 500
+    line-height 47px
+    font-size 30px
+    padding-bottom 4px
+
+  .form-description
+    line-height 20px
+    font-size 14px
+    color $grey-light-solid
+
+  .dragUpload-file-name
+    margin 0
+    padding 0
+    font-size 13px
+    font-weight 600
+    color $grey-light-solid
+
+  .form-inputs
+    .input-wrapper
+      width 100%
+      margin-bottom 32px
+
+      &:last-child
+        margin-bottom 0
+
+  textarea
+    height 160px
+
+  .btn.-aboveMediumLarge
+    min-width 200px
+    margin-top 4px
+
+  .privacy-according-text
+    font-size 16px
+    line-height 28px
+    color $grey-light-medium
+
+    a
+      linkDefault()
+      font-size 16px
+      color $grey-light-medium
+      text-decoration none
+      font-weight 600
+
+.social-support
+  padding-top 50px
+  padding-bottom 54px
+  border-bottom 2px solid $white
+  display flex
+
+.social-profiles
+  flex 0 0 150px
+  margin-right 45px
+
+.social-support-wrapper
+  flex 1
+
+.social-support-text-wrapper
+  font-size 16px
+  line-height 24px
+  color $grey
+  margin-bottom 30px
+
+  &:last-child
+    margin-bottom 0
+
+  a
+    linkDefault()
+    font-weight 600
+    text-decoration none
+
+  .social-profiles-description
+    margin 0 0 4px
+
+.social-profiles-headline
+  font-size 21px
+  font-weight 500
+  line-height 33px
+  padding-bottom 8px
+  color $black
+
+.social-profiles-list
+  .social-profiles-link
+    color $grey
+    font-size 16px
+    line-height 34px
+    text-decoration none
+    display flex
+    align-items center
+    transition color .15s ease-in-out
+
+    svg path
+      transition fill .15s ease-in-out
+
+    .social-profiles-icon
+      flex 0 0 24px
+      display flex
+      justify-content center
+      margin-right 12px
+
+    &:hover
+      color $black
+
+      svg path
+        fill $grey-dark !important
+
+.faq-social-wrapper
+  font-size 16px
+  line-height 28px
+  color $grey
+  margin-top 48px
+
+  a
+    linkDefault()
+    font-weight 600
+    color $red
+
+@media (max-width 1160px)
+  .contact-text-wrapper
+    margin-right 0
+    margin-left 10px
+
+  .contact-text-wrapper-item .contact-text-main-headline
+    padding-top 0
+    margin-top -6px
+
+  .contact-form-wrapper
+    flex 0 0 calc(50% - 20px)
+
+  .contact-form
+    padding 54px 50px
+
+    .btn.-aboveMediumLarge
+      margin-top 0
+
+  .social-support
+    padding-top 38px
+    padding-bottom 36px
+
+  .faq-social-wrapper
+    margin-top 42px
+
+@media (max-width 992px)
+  .contact-image-wrapper-small
+    display flex
+    justify-content center
+    align-items flex-start
+    padding 0 50px
+    margin-bottom 40px
+
+    img
+      width 100%
+      max-width 500px
+
+  .contact-section-wrapper
+    display block
+
+  .contact-text-wrapper, .contact-form-wrapper
+    width 100%
+    flex 0 0 100%
+    margin 0
+
+  .contact-text-wrapper
+    padding-top 56px
+
+  .contact-form
+    padding 54px 58px
+
+  .contact-text-wrapper-item
+    max-width 100%
+
+  .contact-form .form-inputs .input-wrapper
+    &.-message
+      margin-bottom 26px
+
+  .social-support
+    padding-top 48px
+    padding-bottom 48px
+
+  .faq-social-wrapper
+    margin-top 48px
+
+@media (max-width 620px)
+  .contact-form
+    padding 30px
+
+    .form-headline
+      font-size 24px
+      padding-bottom 1px
+
+    .form-heading
+      padding-bottom 24px
+
+    .privacy-according-text
+      font-size 14px
+      line-height 22px
+
+      a
+        font-size 14px
+
+    .btn.-aboveMediumLarge
+      margin-bottom 30px
+
+  .contact-image-wrapper-small
+    padding 8px 11px
+    margin-bottom 20px
+
+  .contact-form .btn.-aboveMediumLarge
+    width 100%
+    margin-top -4px
+    margin-bottom 30px
+
+  .contact-text-wrapper
+    box-sizing border-box
+    padding-left 0
+    padding-top 50px
+    padding-bottom 90px
+
+  .social-support
+    padding-top 36px
+    padding-bottom 40px
+    flex-wrap wrap
+
+  .social-profiles,
+  .social-support-wrapper
+    flex 0 0 100%
+
+  .social-support-wrapper
+    margin-top 36px
+
+  .faq-social-wrapper
+    margin-top 36px
+
+  .contact-text-wrapper-item .contact-text-main-headline
+    font-size 32px
+    line-height 51px
+    padding-bottom 10px
+
+  .contact-form .form-inputs .input-wrapper.-message
+    margin-bottom 21px

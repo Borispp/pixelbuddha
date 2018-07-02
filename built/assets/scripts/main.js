@@ -4,6 +4,15 @@ var $document = $(document);
 var $html = $('html');
 var $body = $('body');
 
+// Select2
+try {
+	$('.select2').select2({
+		minimumResultsForSearch: -1
+	});
+} catch (e) {
+	console.log(e);
+}
+
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
@@ -452,3 +461,39 @@ function changeTeamPhoto(el) {
 	$(el).find('> div').removeClass('show');
 	nextShow.addClass('show');
 }
+
+// Drag Uploading
+var isAdvancedUpload = function () {
+	var div = document.createElement('div');
+	return ('draggable' in div || 'ondragstart' in div && 'ondrop' in div) && 'FormData' in window && 'FileReader' in window;
+}();
+
+var $dragUpload = $('.js-dragUpload');
+
+if (isAdvancedUpload) {
+	$dragUpload.addClass('has-advanced-upload');
+
+	var droppedFiles = false;
+
+	$dragUpload.on('drag dragstart dragend dragover dragenter dragleave drop', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}).on('dragover dragenter', function () {
+		$dragUpload.addClass('is-dragover');
+	}).on('dragleave dragend drop', function () {
+		$dragUpload.removeClass('is-dragover');
+	}).on('drop', function (e) {
+		var droppedFile = e.originalEvent.dataTransfer.files[0];
+		$(this).find('.dragUpload-file-name').text(droppedFile.name);
+	});
+}
+
+$dragUpload.find('.js-dragUpload-input').on('change', function (e) {
+	console.log(e);
+	$(this).closest('.js-dragUpload').find('.dragUpload-file-name').text($(this).val().split('\\').pop());
+});
+
+$body.on('drag dragstart dragend dragover dragenter dragleave drop', function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+});

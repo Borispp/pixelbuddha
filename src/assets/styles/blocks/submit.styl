@@ -1,0 +1,158 @@
+.submit-wrapper
+  background $grey-lightest-main
+
+.submit-section-wrapper
+  display flex
+  flex-wrap wrap
+  flex-direction row-reverse
+
+.submit-image-wrapper-small
+  display none
+
+.submit-text-wrapper
+  margin-right 58px
+
+  .submit-image
+    width 100%
+    margin-top: -148px;
+    margin-bottom: 36px;
+    max-width: 607px;
+
+.submit-form-wrapper
+  margin-left 58px
+
+.submit-text-wrapper,
+.submit-form-wrapper
+  // flex 0 0 calc(50% - 55px)
+  flex 1
+
+.submit-text-wrapper-item
+  max-width 600px
+  font-size 16px
+  line-height 28px
+  color $grey
+  padding-bottom 36px
+
+  &:last-child
+    padding-bottom 0
+
+  h3
+    font-size 21px
+    line-height 33px
+    font-weight 500
+    padding-bottom 12px
+    color $black
+
+.submit-form
+  background: $white;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-sizing border-box
+  padding 56px 60px
+
+  .form-heading
+    padding-bottom 35px
+
+  .form-headline
+    color $black
+    font-weight 500
+    line-height 47px
+    font-size 30px
+    padding-bottom 4px
+
+  .form-description
+    line-height 20px
+    font-size 14px
+    color $grey-light-solid
+
+  .dragUpload-file-name
+    margin 0
+    padding 0
+    font-size 13px
+    font-weight 600
+    color $grey-light-solid
+
+  .form-inputs
+    .input-wrapper
+      width 100%
+      margin-bottom 32px
+
+      &:last-child
+        margin-bottom 0
+
+  textarea
+    height 160px
+
+  .btn.-aboveMediumLarge
+    min-width 200px
+    margin-top 8px
+
+@media (max-width 1160px)
+  .submit-text-wrapper .submit-image
+    margin-top 0
+
+  .submit-text-wrapper
+    margin-right 30px
+
+  .submit-form-wrapper
+    margin-left 30px
+    flex 0 0 calc(50% - 20px)
+
+  .submit-form
+    padding 54px 50px
+
+@media (max-width 992px)
+  .submit-image-wrapper-small
+    display flex
+    justify-content center
+    align-items flex-start
+    padding 0 50px
+    margin-bottom 40px
+
+    img
+      width 100%
+      max-width 500px
+
+  .submit-text-wrapper .submit-image
+    display none
+
+  .submit-section-wrapper
+    display block
+
+  .submit-text-wrapper, .submit-form-wrapper
+    width 100%
+    flex 0 0 100%
+    margin 0
+
+  .submit-text-wrapper
+    padding-top 56px
+
+  .submit-form
+    padding 54px 58px
+
+  .submit-text-wrapper-item
+    max-width 100%
+
+@media (max-width 620px)
+  .submit-form
+    padding 30px
+
+    .form-headline
+      font-size 24px
+      padding-bottom 1px
+
+    .form-heading
+      padding-bottom 24px
+
+  .submit-image-wrapper-small
+    padding 8px 11px
+    margin-bottom 20px
+
+  .submit-form .btn.-aboveMediumLarge
+    width 100%
+    margin-top 0
+
+  .submit-text-wrapper
+    box-sizing border-box
+    padding-left 12px
+    padding-bottom 90px

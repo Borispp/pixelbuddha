@@ -477,6 +477,46 @@
     .radio-circle
       border 2px solid $violet-border
 
+.checkbox-input
+  cursor pointer
+  display flex
+
+  &:hover
+    .checkbox-square
+      border 2px solid $violet-border
+
+  input
+    display none
+
+    &:checked
+      + .checkbox-square
+        svg
+          display block
+
+  .checkbox-square
+    display block
+    background $grey-lightest-main
+    flex 0 0 24px
+    border-radius 4px
+    width 24px
+    height 24px
+    position relative
+    margin-right 20px
+    box-sizing border-box
+    border-color transparent
+    transition border-color .15s ease-in-out
+    margin-top 4px
+
+    svg
+      display none
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+
+  .checkbox-content
+    display block
+
 .connected-block-wrapper
   position relative
 
